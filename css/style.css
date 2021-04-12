@@ -2,6 +2,22 @@
   font-family: 'newregular', Arial, sans-serif; 
 }
 
+h3 {
+    font-size: 1.25em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.8em;
+}
+
 /* unvisited link */
 a:link {
   color: #5C2CA8;
