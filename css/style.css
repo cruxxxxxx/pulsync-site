@@ -103,3 +103,8 @@ footer {
   left: 0;
   width: 100%;
 }
+
+
+#artists > a > img:hover {
+  -webkit-filter: invert(100%);
+}
