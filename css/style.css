@@ -19,7 +19,8 @@ html { font-size: calc(1em + 1vw) }
 
 body {
   background-color: #EDEDED;
-  color: #000000;
+  color: #fff;
+  font-size: .6em;
 }
 
 h3 {
@@ -44,13 +45,13 @@ h6 {
 
 /* unvisited link */
 a:link {
-  color: #5C2CA8;
+  color: #fff;
   text-underline-offset: 0.2rem;
 }
 
 /* visited link */
 a:visited {
-  color: #5C2CA8;
+  color: #ddd;
 }
 
 /* mouse over link */
@@ -83,6 +84,7 @@ a:active {
 #artists{
 	text-align:center; 
 	flex-grow: 1;
+  padding: 1%;
 }
 
 #copyright{
@@ -96,15 +98,30 @@ img {
 }
 
 footer {
-  position: fixed;
-  background-color: white;
+  /* position: fixed; */
+  background-color: #000;
   text-align: center;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
+#artists > #artist > a > img:hover {
+  -webkit-filter: brightness(0.7);
+}
 
-#artists > a > img:hover {
-  -webkit-filter: invert(100%);
+#artist {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#videoBG {
+  position:fixed;
+  z-index: -1;
+  opacity: 1;
+}
+
+body {
+  background-image: url("../img/bg.png");
+  background-size: cover;
 }
